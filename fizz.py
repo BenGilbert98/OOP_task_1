@@ -10,16 +10,18 @@ class Fizz(List):
         self.fizzbuzz_list = []
 
     def fizz(self):
+        fizz_number = int(input("What would you like the fizz divide number to be?   "))
+        buzz_number = int(input("What would you like the buzz divide number to be?   "))
         for i in self.list:
-            if i % 3 != 0:
+            if i % fizz_number != 0:
                 self.fizz_list.append(i)
-            elif i % 3 == 0:
+            elif i % fizz_number == 0:
                 self.fizz_list.append("Fizz")
 
         for i in self.list:
-            if i % 5 != 0:
+            if i % buzz_number != 0:
                 self.buzz_list.append(i)
-            elif i % 5 == 0:
+            elif i % buzz_number == 0:
                 self.buzz_list.append("Buzz")
 
         for i in self.fizz_list:
